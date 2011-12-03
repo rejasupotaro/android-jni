@@ -113,7 +113,7 @@ static void filter(AndroidBitmapInfo* info, void* pixels) {
 	int width = info->width;
 	int height = info->height;
 
-	burn_neon_instrinsics(info, pixels, width, height);
+	burn_neon_intrinsics(info, pixels, width, height);
 
 	for (y = 0; y < height; y++) {
 		rgba* line = (rgba*) pixels;
